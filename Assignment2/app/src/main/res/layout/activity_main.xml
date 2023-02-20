@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Red"
+            android:textSize="18sp"/>
+
+        <SeekBar
+            android:id="@+id/red_slider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255"/>
+
+        <TextView
+            android:id="@+id/redValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textSize="14sp"
+            android:textAlignment="center"/>
+
+        <Switch
+            android:id="@+id/red_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:checked="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Green"
+            android:textSize="18sp"/>
+
+        <SeekBar
+            android:id="@+id/green_slider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255"/>
+
+        <TextView
+            android:id="@+id/greenValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textSize="14sp"
+            android:textAlignment="center"/>
+
+        <Switch
+            android:id="@+id/green_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:checked="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blue"
+            android:textSize="18sp"/>
+
+        <SeekBar
+            android:id="@+id/blue_slider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255"/>
+
+        <TextView
+            android:id="@+id/blueValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textSize="14sp"
+            android:textAlignment="center"/>
+
+        <Switch
+            android:id="@+id/blue_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:checked="true" />
+
+        <View
+            android:id="@+id/color_box"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Reset" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
